@@ -1,0 +1,36 @@
+/* Default Line Left */
+.site-title h2::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  right: 0;
+  bottom: 6px;
+  width: 82px;
+  height: 3px;
+  background: rgb(249, 179, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 179, 0, 1) 0%,
+    rgba(255, 221, 135, 1) 50%,
+    rgba(249, 179, 0, 1) 100%
+  );
+}
+
+.site-title h2::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  right: 0;
+  bottom: 7px;
+  width: 1000px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Line Right */
+
+.hp-properties .site-title h2::before,
+.hp-properties .site-title h2::after {
+  right: initial;
+  left: 0;
+}

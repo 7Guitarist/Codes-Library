@@ -1,0 +1,82 @@
+.region-properties-container .properties-slick-arrow .site-btn {
+  z-index: 2;
+  width: 265px;
+  /* margin: 65px auto 0; */
+}
+
+.properties-slick-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 57px;
+  margin-top: 65px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.properties-slick-arrow .slick-arrow {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  color: #ccc;
+  text-transform: uppercase;
+  gap: 22px;
+}
+
+.properties-slick-arrow span {
+  color: #fff;
+  width: 50px;
+  font-size: 12px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #adadad;
+  cursor: pointer;
+  position: relative;
+  pointer-events: all;
+}
+
+.properties-slick-arrow .slick-arrow:hover span {
+  color: #000;
+  background: rgb(249, 179, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 179, 0, 1) 0%,
+    rgba(255, 221, 135, 1) 50%,
+    rgba(249, 179, 0, 1) 100%
+  );
+}
+.properties-slick-arrow span::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  right: -13px;
+  transform: translateY(-50%);
+  background: #adadad;
+  height: 1px;
+  width: 25px;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.properties-slick-arrow span.next::after {
+  left: -13px;
+  right: initial;
+}
+@media only screen and (max-width: 767px) {
+  .region-properties-container .properties-slick-arrow .site-btn {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

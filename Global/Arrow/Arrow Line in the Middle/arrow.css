@@ -1,0 +1,78 @@
+.testimonials-slick-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 65px;
+  margin-top: 21px;
+  position: relative;
+}
+
+.testimonials-slick-arrow::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 1px;
+  height: 34px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.testimonials-slick-arrow .slick-arrow {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  color: #ccc;
+  text-transform: uppercase;
+  gap: 22px;
+  cursor: pointer;
+}
+
+.testimonials-slick-arrow span {
+  color: #fff;
+  width: 50px;
+  font-size: 12px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #adadad;
+  cursor: pointer;
+  position: relative;
+  pointer-events: all;
+}
+
+.testimonials-slick-arrow .slick-arrow:hover span {
+  color: #000;
+  background: rgb(249, 179, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 179, 0, 1) 0%,
+    rgba(255, 221, 135, 1) 50%,
+    rgba(249, 179, 0, 1) 100%
+  );
+}
+.testimonials-slick-arrow span::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  right: -13px;
+  transform: translateY(-50%);
+  background: #adadad;
+  height: 1px;
+  width: 25px;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.testimonials-slick-arrow .next span::after {
+  left: -13px;
+  right: initial;
+}

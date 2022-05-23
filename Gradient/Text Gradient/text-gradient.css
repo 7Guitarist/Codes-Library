@@ -1,0 +1,12 @@
+h1,
+i {
+  background: rgb(185, 145, 58);
+  background: linear-gradient(
+    135deg,
+    rgba(185, 145, 58, 1) 0%,
+    rgba(225, 207, 116, 1) 59%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

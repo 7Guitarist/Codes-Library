@@ -1,0 +1,15 @@
+/* Builder TODO */
+.hp-quick-search .region-quick-search-container {
+  background: #ffc000;
+  padding: 42px 0 50px;
+}
+
+.hp-quick-search .quick-search-form {
+  margin-bottom: 20px;
+  padding: 0 24px;
+}
+
+/* Media 992 */
+.quick-search-form {
+  align-items: end;
+}

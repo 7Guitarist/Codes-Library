@@ -1,0 +1,14 @@
+.header-logo {
+  max-width: 16.25vw;
+}
+
+.header-logo .fixed-logo {
+  display: none;
+}
+.header.show-fixed .header-logo .normal-logo {
+  display: none;
+}
+
+.header.show-fixed .header-logo .fixed-logo {
+  display: block;
+}

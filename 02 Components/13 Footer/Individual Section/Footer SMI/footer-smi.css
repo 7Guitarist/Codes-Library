@@ -1,0 +1,24 @@
+.footer-smi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.footer-smi a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+
+  background: #fff;
+  color: #900020;
+  font-size: 16px;
+}
+
+.footer-smi a:hover {
+  background: #d6ba73;
+}

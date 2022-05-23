@@ -1,0 +1,20 @@
+/* Parallax */
+/* parent */
+.block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+.img-parallax {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  pointer-events: none;
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+}

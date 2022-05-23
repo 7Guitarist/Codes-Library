@@ -1,0 +1,15 @@
+.slick-slide.slick-current {
+}
+
+.hp-properties .slick-slide.slick-current .properties-item:hover {
+  transform: scale(1.18) translateX(8%);
+}
+
+/* Slick Zoom  */
+.hp-properties .slick-track {
+  padding: 10% 0;
+}
+
+.hp-properties .slick-list {
+  margin: -10% 0;
+}

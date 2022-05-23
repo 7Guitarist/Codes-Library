@@ -1,0 +1,25 @@
+::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: rgb(185, 145, 58);
+  background: linear-gradient(
+    135deg,
+    rgba(185, 145, 58, 1) 0%,
+    rgba(225, 207, 116, 1) 59%
+  );
+}

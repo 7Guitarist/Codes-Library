@@ -1,0 +1,33 @@
+.footer-contact {
+  display: flex;
+  margin: 0 auto 40px;
+  justify-content: center;
+  gap: 65px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-contact-item em,
+.footer-contact-item a {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.footer-contact-item em:hover,
+.footer-contact-item a:hover {
+  color: #d6ba73;
+}
+
+.footer-contact-item > span:first-of-type {
+  font-size: 18px;
+  color: #fff;
+}
+.footer .footer-contact-item .ai-font-envelope-f {
+  font-size: 15px;
+}

@@ -1,0 +1,44 @@
+.contact-form {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  font-size: 0;
+  z-index: 2;
+}
+
+.contact-form .form-md input,
+.contact-form .form-lg textarea {
+  border: solid 2px rgba(157, 157, 157, 0.5);
+}
+
+.contact-form .form-md input {
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.contact-form .form-lg textarea {
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  resize: none;
+  padding: 18px 60px 0 19px;
+}
+
+/* Airplane Submit */
+.form-btn-wrapper input {
+  border: 0;
+  position: absolute;
+  right: 30px;
+  bottom: 35px;
+  width: 35px;
+  height: 30px;
+  background: url(images/contact-send.png) center/contain no-repeat;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.form-btn-wrapper input:hover {
+  background: url(images/contact-send-hover.png) center/contain no-repeat;
+}

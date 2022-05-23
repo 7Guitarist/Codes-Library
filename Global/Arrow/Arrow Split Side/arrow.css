@@ -1,0 +1,93 @@
+.communities-slick-arrow {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: calc(100% + 134px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1544px;
+  margin: 0 auto;
+}
+
+.communities-slick-arrow span {
+  color: #fff;
+  width: 50px;
+  font-size: 12px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #adadad;
+  cursor: pointer;
+  position: relative;
+  pointer-events: all;
+}
+
+.communities-slick-arrow span:hover {
+  color: #000;
+  background: rgb(249, 179, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 179, 0, 1) 0%,
+    rgba(255, 221, 135, 1) 50%,
+    rgba(249, 179, 0, 1) 100%
+  );
+}
+.communities-slick-arrow span::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  right: -13px;
+  transform: translateY(-50%);
+  background: #adadad;
+  height: 1px;
+  width: 25px;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.communities-slick-arrow span.next::after {
+  left: -13px;
+  right: initial;
+}
+
+@media only screen and (max-width: 1199px) {
+  .communities-slick-arrow span {
+    width: 40px;
+    font-size: 10px;
+    height: 40px;
+  }
+
+  .communities-slick-arrow {
+    width: calc(100% + 111px);
+  }
+
+  .communities-slick-arrow span.next::after {
+    left: -9px;
+  }
+
+  .communities-slick-arrow span::after {
+    right: -9px;
+    width: 17px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .communities-slick-arrow {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    top: initial;
+    left: initial;
+    transform: none;
+    gap: 50px;
+    margin-top: 25px;
+  }
+}

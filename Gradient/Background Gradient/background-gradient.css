@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.box {
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
+  background: gray;
+  margin: 20px 0;
+  position: relative;
+}
+.box::after {
+  position: absolute;
+  pointer-events: none;
+  content: "";
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+
+  /* Background Gradient */
+  background: rgb(185, 145, 58);
+  background: linear-gradient(
+    135deg,
+    rgba(185, 145, 58, 1) 0%,
+    rgba(225, 207, 116, 1) 59%
+  );
+}

@@ -1,0 +1,25 @@
+.hp-awards {
+  background: url(images/awards-bg.jpg) center/100% 100% no-repeat;
+  padding: 75px 15px;
+}
+
+.awards-slick {
+  max-width: 1425px;
+  margin: 0 auto;
+}
+
+.hp-awards .slick-slide {
+  margin: 0 30px;
+}
+
+.awards-item {
+  display: flex !important;
+  align-items: center;
+  min-height: 95px;
+}
+
+.awards-items {
+  display: grid !important;
+  grid-template-columns: repeat(5, auto);
+  gap: 50px;
+}

@@ -1,0 +1,17 @@
+https://stackoverflow.com/questions/33550450/how-to-use-css-background-attachment-in-img-tag    
+
+https://stackoverflow.com/questions/46896868/background-attachmentfixed-equivalent-for-imgs
+
+.parent {
+      clip-path: inset(0);
+      position: relative;
+}
+
+.section-bg img {
+      position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}

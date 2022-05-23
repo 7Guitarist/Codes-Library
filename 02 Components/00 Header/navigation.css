@@ -1,0 +1,66 @@
+/* Navigation Text */
+.header .navigation #nav {
+  font-size: 0.9375vw;
+  letter-spacing: 0.15em;
+  gap: 2.9375vw;
+
+  color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+}
+
+/* Navigation Dual Line Hover */
+#nav > li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  bottom: -10px;
+  right: 0; /* line starts on right */
+  /* transform: translateX(-50%); animation starts on middle */
+  pointer-events: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+#nav > li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  top: -10px;
+  left: 0; /* line starts on left */
+  /* transform: translateX(-50%); animation starts on middle */
+  pointer-events: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#nav > li:hover::before,
+#nav > li:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+/* Sub Menu Hover */
+#nav .sub-menu a {
+  background: rgba(17, 17, 17, 0.7);
+}
+
+#nav .sub-menu a:hover {
+  background: rgb(249, 179, 0);
+  background: linear-gradient(
+    14deg,
+    rgba(249, 179, 0, 1) 0%,
+    rgba(255, 221, 135, 1) 50%,
+    rgba(249, 179, 0, 1) 100%
+  );
+  color: #000;
+  text-shadow: 0 0 1px #000;
+  text-decoration: none;
+}
