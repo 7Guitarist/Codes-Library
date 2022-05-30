@@ -1,0 +1,2 @@
+Properties Slick na may empty picture sa unahan -> http://localhost/isd-projects/stevedhillon_new/
+Quick Search -> http://localhost/isd-projects/seluxuryliving.com/
